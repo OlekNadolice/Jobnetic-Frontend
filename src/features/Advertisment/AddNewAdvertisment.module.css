@@ -1,0 +1,67 @@
+.form {
+  height: calc(70vh - 60px);
+  background-color: var(--font-primary-color);
+  max-width: 800px;
+  width: 90vw;
+  padding: 1rem;
+  place-content: center;
+  display: grid;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.form input {
+  color: var(--font-third-color) !important;
+}
+
+.form ::placeholder {
+  color: var(--secondary-color);
+}
+
+.form button {
+  background-color: var(--secondary-color);
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 0.8rem 0;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selectBox select {
+  padding: 0.3rem;
+}
+
+.selectBox span {
+  color: var(--error-color);
+  font-size: 0.8rem;
+}
+
+.step > button {
+  padding: 1rem 0;
+}
+
+.step input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 40px 40px 40px;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .form button {
+    padding: 0;
+  }
+}

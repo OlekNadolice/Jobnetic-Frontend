@@ -1,0 +1,40 @@
+.container {
+  height: calc(70vh - 60px);
+  background-color: var(--font-primary-color);
+  max-width: 800px;
+  width: 90vw;
+  padding: 1rem;
+  place-content: center;
+  display: grid;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.container input {
+  color: var(--font-third-color) !important;
+}
+
+.container input::placeholder {
+  color: var(--secondary-color);
+}
+
+.container > button {
+  background-color: var(--secondary-color);
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 0.8rem 0;
+}
+
+.container > button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 40px 40px 40px;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+}

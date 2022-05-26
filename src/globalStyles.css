@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  --primary-color: #5168f4;
+  --secondary-color: #0d47a1;
+  --third-color: #25262a;
+  --font-primary-color: #fff;
+  --font-secondary-color: #727475;
+  --font-third-color: #444;
+  --error-color: #cc0001;
+  --button-color: #d62f5a;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-color: #e3f2fd;
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: var(--font-primary-color);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+input {
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: var(--font-primary-color);
+}
+
+.flexContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.stepBox {
+  grid-column: 1/-1;
+  overflow-y: scroll;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stepBox input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.stepBox button {
+  height: 35px;
+}
+
+.stepContent {
+  width: 100%;
+  height: 40%;
+  overflow-y: scroll;
+  list-style-type: decimal;
+  padding: 0.5rem;
+}
+
+.stepContent li {
+  margin-bottom: 5px;
+}
+
+.stepContent li span {
+  background-color: #e7e8f6;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-action {
+  background-color: var(--button-color) !important;
+}

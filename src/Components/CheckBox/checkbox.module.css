@@ -1,0 +1,31 @@
+.checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* padding-left: 5px; */
+}
+
+.checkbox input {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #e3f2fd;
+
+  border: 2px solid gray;
+}
+
+.checkbox label {
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
+.checkbox input:checked {
+  appearance: checkbox;
+}
+
+.error {
+  color: var(--error-color);
+  width: 100%;
+  text-align: left;
+  font-size: 0.7rem;
+}

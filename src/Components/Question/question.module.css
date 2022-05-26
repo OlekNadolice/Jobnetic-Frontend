@@ -1,0 +1,47 @@
+.container {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 1.4rem;
+  border-radius: 10px;
+}
+
+.container svg {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--font-third-color);
+}
+
+.questionHeader h3 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+.answer {
+  margin-top: 10px;
+  animation: fadeIn 0.4s linear;
+  animation-fill-mode: forwards;
+  font-size: 1.1rem;
+  color: var(--font-third-color);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: clamp(0.7rem, 5vw, 1.1rem);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

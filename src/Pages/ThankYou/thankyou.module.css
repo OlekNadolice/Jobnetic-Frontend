@@ -1,0 +1,38 @@
+.succesBtn {
+  color: var(--font-primary-color);
+  background-color: #45a92b;
+  padding: 10px 100px;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding-inline: 20px;
+  color: var(--third-color);
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+
+.container h6 {
+  font-size: 1.2rem;
+}
+
+.succesBtn:hover {
+  opacity: 0.9;
+}
+
+.succesIcon {
+  background-color: #45a92b;
+  color: var(--font-primary-color);
+  font-size: 5rem;
+  border-radius: 50%;
+  padding: 10px;
+}

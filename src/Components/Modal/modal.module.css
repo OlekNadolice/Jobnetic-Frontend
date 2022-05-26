@@ -1,0 +1,50 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modalHeader {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.4rem;
+  align-items: center;
+
+  background-color: var(--secondary-color);
+  color: var(--font-primary-color);
+}
+
+.modal {
+  animation: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.modalHeader svg {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.modalHeader h2 {
+  font-size: clamp(1.3rem, 5vw, 1.5rem);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
