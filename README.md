@@ -1,3 +1,21 @@
+# Jobnetic
+
+- I will deploy this webiste soon.
+
+# What I use to build this application
+
+- HTML
+- CSS with modules
+- React
+- Context API for managing the global state of application.
+- Type Script
+- Express for Backend
+- Mongo DB - Cloud version for Database
+
+# Reflections
+
+- The speed of the backend may not be good, the reason is that I use Heroku to host my backend, which as we all know is not very efficient.
+
 # Screenshots
 
 <img src='./src/images/img1.png'/>
