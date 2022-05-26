@@ -1,6 +1,6 @@
 # Jobnetic
 
-- I will deploy this webiste soon.
+- I will deploy this webiste soon. There is a few things that I need to change / add.
 
 # What I use to build this application
 
