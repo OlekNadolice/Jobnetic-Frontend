@@ -12,6 +12,14 @@
 - Express for Backend
 - Mongo DB - Cloud version for Database
 
+
+
+# Features
+- Creating account
+- Logging to account
+- Adding Job advertisement
+- Sending job application with email
+
 # Reflections
 
 - The speed of the backend may not be good, the reason is that I use Heroku to host my backend, which as we all know is not very efficient.
