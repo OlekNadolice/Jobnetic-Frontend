@@ -24,7 +24,10 @@ const FourthStep: FC<FourthStepProps> = props => {
         type="text"
         placeholder="Add Expected Technologies"
         value={inputValue}
-        onChange={e => setInputValue(e.target.value)}
+        onChange={e => {
+          e.stopPropagation();
+          setInputValue(e.target.value);
+        }}
       />
       <ol className="stepContent flex">
         {props.expectedTechnologies.length > 0 &&
@@ -36,10 +39,10 @@ const FourthStep: FC<FourthStepProps> = props => {
             );
           })}
       </ol>
-      <button onClick={() => props.setStep(5)}>Next</button>
       <button onClick={addNewTechnology} disabled={inputValue.length < 2}>
         Add
       </button>
+      <button onClick={() => props.setStep(5)}>Next</button>
       <button onClick={() => props.setStep(3)}>Back</button>
     </div>
   );

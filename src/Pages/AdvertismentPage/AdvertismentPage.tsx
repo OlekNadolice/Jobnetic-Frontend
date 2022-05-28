@@ -70,8 +70,6 @@ const AdvertismentPage: FC = () => {
     globalDispatcher({ type: "HANDLE_CV_MODAL", payload: true });
   };
 
-  console.log(data);
-
   if (loading) {
     return (
       <div className={classes.centerFlex}>

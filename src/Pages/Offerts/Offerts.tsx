@@ -74,7 +74,6 @@ const Offerts: FC = () => {
           }`
         );
         const data = await response.json();
-        console.log(data);
 
         dispatch({ type: "SET_DATA", payload: { data: data.data, size: data.size } });
       } catch (err) {

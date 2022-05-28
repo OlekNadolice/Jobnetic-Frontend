@@ -44,7 +44,7 @@ const FifthStep: FC<FifthStepProps> = props => {
       <button disabled={props.isLoading} className=" btn-action" onClick={props.submit}>
         Send Data
       </button>
-      <button onClick={() => props.setStep(3)}>Back</button>
+      <button onClick={() => props.setStep(4)}>Back</button>
     </div>
   );
 };

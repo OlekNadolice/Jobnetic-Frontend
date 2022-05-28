@@ -3,6 +3,8 @@ import { appContext } from "Context/App.context";
 
 import ClipLoader from "react-spinners/ClipLoader";
 
+import { useLocation } from "react-router-dom";
+
 import classes from "./sendCv.module.css";
 import Modal from "Components/Modal/Modal";
 
@@ -12,9 +14,13 @@ import * as yup from "yup";
 
 const SendCv: FC = () => {
   const { dispatch } = useContext(appContext);
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(true);
   const [sendedMessage, setSendedMessage] = useState(false);
   let body;
+  const advertismentId = location.pathname.split(":")[1];
+
   const closeModalHandler = () => {
     dispatch({ type: "HANDLE_CV_MODAL", payload: false });
   };
@@ -66,10 +72,16 @@ const SendCv: FC = () => {
           lastName: formik.values.lastName,
           email: formik.values.email,
           githubProfile: formik.values.githubProfile,
+          advertismentId: advertismentId,
         }),
       })
         .then(data => {
-          console.log(data);
+          if (data.status === 200) {
+            setSendedMessage(true);
+          }
+        })
+        .catch(err => {
+          setError(true);
         })
         .finally(() => {
           setIsLoading(false);
@@ -131,10 +143,10 @@ const SendCv: FC = () => {
 
   if (sendedMessage) {
     body = (
-      <>
-        <h2>Thank your for sending your Cv</h2>
-        <p>We'll reply for your resume as fast as possible.</p>
-      </>
+      <div className={classes.confirmMessage}>
+        <h2>Thank you for sending your resume!</h2>
+        <p>We'll replay as fast as possible.</p>
+      </div>
     );
   }
 

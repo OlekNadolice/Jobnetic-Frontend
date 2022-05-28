@@ -24,6 +24,7 @@ const AddNewAdvertisment: FC = () => {
   const [niceToHaveTechnologies, setNiceToHaveTechnologies] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
+  const id = localStorage.getItem("token");
 
   const formik = useFormik({
     initialValues: {
@@ -83,6 +84,7 @@ const AddNewAdvertisment: FC = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
+            Owner: id,
             Title: formik.values.positionName,
             Company: formik.values.company,
             City: formik.values.place,
