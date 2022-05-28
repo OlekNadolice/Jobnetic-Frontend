@@ -1,6 +1,6 @@
 # Jobnetic
 
-- I will deploy this webiste soon.
+- I will deploy this webiste soon. There is a few things that I need to change / add.
 
 # What I use to build this application
 
@@ -11,6 +11,14 @@
 - Type Script
 - Express for Backend
 - Mongo DB - Cloud version for Database
+
+
+
+# Features
+- Creating account
+- Logging to account
+- Adding Job advertisement
+- Sending job application with email
 
 # Reflections
 
