@@ -4,6 +4,12 @@
 
 - Here is the link https://frabjous-bienenstitch-0dfa59.netlify.app/
 
+-  If you want to login to my application you can use this sample account:
+
+email: test@wp.pl
+
+password: 1234567
+
 
 # Jobnetic
 
