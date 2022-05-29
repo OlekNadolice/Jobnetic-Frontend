@@ -1,3 +1,10 @@
+## You have to read this before open my application !!!!!!
+
+- Add Blocker is blocking some of my API Endpoints i call them /advertisement etc. I heard that many people have this problem, so if you want to have acces for all informations, you have to turn off add blocker for this site !
+
+- Here is the link https://frabjous-bienenstitch-0dfa59.netlify.app/
+
+
 # Jobnetic
 
 - I will deploy this webiste soon. There is a few things that I need to change / add.
